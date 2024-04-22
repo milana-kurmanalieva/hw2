@@ -1,0 +1,31 @@
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  border: 1px solid black;
+  transition: 3s;
+}
+@keyframes revealInfo {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.cardInfo:hover {
+  padding-bottom: 20px;
+  transition: padding-bottom 0.3s;
+  animation: revealInfo 0.5s forwards;
+}
+
+.cardHover {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
